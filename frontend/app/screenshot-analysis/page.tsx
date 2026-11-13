@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { AppShell } from "@/components/layout/AppShell";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { StatCard } from "@/components/ui/StatCard";
 import { StatusBadge } from "@/components/ui/StatusBadge";
@@ -271,7 +272,8 @@ export default function ScreenshotAnalysisPage() {
   };
 
   return (
-    <div className="space-y-8 pb-12">
+    <AppShell>
+      <div className="space-y-8 pb-12">
       <PageHeader
         title="Screenshot to AI Analysis"
         description="Upload screenshots of 1xBet / SPRIBE Aviator multiplier history ribbon to extract previous outcomes and run exploratory statistical research."
@@ -599,6 +601,8 @@ export default function ScreenshotAnalysisPage() {
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </AppShell>
   );
 }
+
