@@ -16,3 +16,4 @@ services:
         value: '["*"]'
       - key: CORS_ORIGINS
         value: '["https://*.vercel.app", "http://localhost:3000"]'
+

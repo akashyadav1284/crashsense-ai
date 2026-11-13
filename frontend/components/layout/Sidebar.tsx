@@ -22,6 +22,7 @@ import {
   HeartPulse,
   Settings,
   ShieldCheck,
+  Camera,
   ChevronLeft,
   ChevronRight,
   Zap,
@@ -57,6 +58,7 @@ const NAVIGATION: NavGroup[] = [
     group: "ANALYTICS",
     items: [
       { name: "Multiplier Analytics", href: "/analytics", icon: BarChart3 },
+      { name: "Screenshot Analysis", href: "/screenshot-analysis", icon: Camera },
       { name: "Statistical Laboratory", href: "/statistical-lab", icon: FlaskConical },
       { name: "ML Research Lab", href: "/ml-lab", icon: BrainCircuit },
       { name: "Model Performance", href: "/ml-lab/performance", icon: TrendingUp },

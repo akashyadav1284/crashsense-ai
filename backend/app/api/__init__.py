@@ -16,6 +16,7 @@ from backend.app.api.notifications import (
     router_users,
     router_admin,
 )
+from backend.app.api.screenshot_analysis import router as screenshot_analysis_router
 
 api_v1_router = APIRouter()
 api_v1_router.include_router(health_router)
@@ -29,6 +30,7 @@ api_v1_router.include_router(realtime_router)
 api_v1_router.include_router(simulation_router)
 api_v1_router.include_router(risk_router)
 api_v1_router.include_router(mc_router)
+api_v1_router.include_router(screenshot_analysis_router)
 api_v1_router.include_router(router_notifications)
 api_v1_router.include_router(router_alerts)
 api_v1_router.include_router(router_users)
